@@ -33,7 +33,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Navigation */}
-      <nav className="flex justify-between items-center p-6 shadow-md bg-white sticky top-0 z-50 border-b border-gray-100">
+            <nav className="flex justify-between items-center p-6 shadow-md bg-white sticky top-0 z-50 border-b border-gray-100">
         <div className="flex items-center gap-4">
           <div className="flex flex-col leading-tight">
             <span className="text-2xl font-bold tracking-tight text-blue-700">
@@ -45,26 +45,39 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex gap-6 text-sm md:text-lg text-gray-700">
-          {[
-            ["home", "Home"],
-            ["about", "About"],
-            ["services", "Services"],
-            ["testimonials", "Testimonials"],
-            ["contact", "Contact"],
-            ["blog", "Blog"],
-          ].map(([key, label]) => (
-            <button
-              key={key}
-              onClick={() => setPage(key)}
-              className={
-                "hover:text-blue-600 transition " +
-                (page === key ? "text-blue-600 font-semibold" : "")
-              }
-            >
-              {label}
-            </button>
-          ))}
+        <div className="flex items-center gap-4">
+          <div className="flex gap-6 text-sm md:text-lg text-gray-700">
+            {[
+              ["home", "Home"],
+              ["about", "About"],
+              ["services", "Services"],
+              ["testimonials", "Testimonials"],
+              ["contact", "Contact"],
+              ["blog", "Blog"],
+            ].map(([key, label]) => (
+              <button
+                key={key}
+                onClick={() => setPage(key)}
+                className={
+                  "hover:text-blue-600 transition " +
+                  (page === key ? "text-blue-600 font-semibold" : "")
+                }
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Book Now button */}
+          <a
+            href="https://calendly.com/precisionstrengthlab/assessment"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button className="bg-blue-600 text-white text-sm md:text-base hover:bg-blue-700">
+              Book Now
+            </Button>
+          </a>
         </div>
       </nav>
 
