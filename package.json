@@ -1,11 +1,16 @@
 {
-  "name": "psl-website",
+  "name": "psl-website-final",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.18.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
