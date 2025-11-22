@@ -70,7 +70,7 @@ export default function App() {
 
           {/* Book Now button */}
           <a
-            href="https://calendly.com/precisionstrengthlab/assessment"
+            href="https://calendly.com/app/scheduling/meeting_types/user/me"
             target="_blank"
             rel="noreferrer"
           >
